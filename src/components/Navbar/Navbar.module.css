@@ -1,0 +1,57 @@
+@import "../../variables.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-color: var(--color-background);
+    font-family: var(--font-roboto);
+    color: var(--color-gray-text);
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 60%;
+    min-width: 25%;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+
+.menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        gap: 20px;
+    }
+
+    .menuItems {
+        gap: 15px;
+        font-size: 18px;
+        color: red;
+    }
+}
