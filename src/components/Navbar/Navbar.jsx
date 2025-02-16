@@ -22,6 +22,7 @@ export const Navbar = () => {
                     <li>What we do</li>
                     <li>Get involved</li>
                     <li>Contact us</li>
+                    <li>Login</li>
                 </ul>
             </div>
         </nav>

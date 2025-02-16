@@ -33,25 +33,14 @@
     display: flex;
     gap: 47px;
     list-style: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     white-space: nowrap;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 
 .menuBtn {
     display: none;
-}
-
-@media screen and (max-width: 900px) {
-    .menu {
-        gap: 20px;
-    }
-
-    .menuItems {
-        gap: 15px;
-        font-size: 18px;
-        color: red;
-    }
 }
