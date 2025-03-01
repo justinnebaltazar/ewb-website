@@ -1,0 +1,56 @@
+@import url("../../variables.css");
+
+.carousel-item {
+    display: block;
+}
+
+.testimonial {
+    position: relative;
+    text-align: center;
+    padding: 80px;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-poppins);
+    text-transform: uppercase;
+}
+
+.quote::before {
+    content: attr(data-quote);
+    position: absolute;
+    padding-left: 60px; 
+    color: rgba(0, 40, 108, 0.10);
+    z-index: -1;
+    font-size: 75px;
+    text-align: justify;
+    overflow: hidden;
+    max-width: 100%;
+    word-break: break-word;
+    word-spacing: -2px;
+    text-align: justify;
+    overflow-wrap: break-word; 
+    white-space: normal;
+}
+
+.author {
+
+    font-style: italic;
+    padding-top: 45px;
+    font-size: 24px;
+    max-width: 50%;
+}
+
+.author, .quote {
+    color: var(--color-blue);
+}
+
+
+.quote {
+    max-width: 60%;
+    font-size: 32px;
+    padding-top: 40px;
+    font-weight: 600;
+}
