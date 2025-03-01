@@ -1,0 +1,64 @@
+@import url("../../variables.css");
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 70px 10px;
+}
+
+.quotes {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray);
+    font-family: var(--font-poppins);
+    text-align: center;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.goalsContainer {
+    font-family: var(--font-poppins);
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding: 20px 7% 0;
+    justify-content: space-between;
+}
+
+.goal {
+    width: 50%;
+    padding-top: 20px; 
+}
+
+.title {
+    padding: 15px 0;
+}
+
+.subheader {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+.button {
+    border: 3px solid darkblue;
+    width: 25%;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 5px 5px; 
+}

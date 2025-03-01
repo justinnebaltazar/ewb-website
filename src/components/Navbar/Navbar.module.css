@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 30px 10%;
     background-color: var(--color-background);
-    font-family: var(--font-roboto);
+    font-family: var(--font-poppins);
     color: var(--color-gray-text);
     text-transform: uppercase;
 }
