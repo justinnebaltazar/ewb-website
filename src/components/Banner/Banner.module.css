@@ -1,0 +1,54 @@
+
+@import url("../../variables.css");
+
+.container {
+    position: relative; /* Needed for absolute positioning of the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/images/backgrounds/ewb-team-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+    padding-top: 20px;
+    padding-right: 10%;
+    flex-direction: column;
+    padding-left: 7%;
+    font-family: var(--font-poppins);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 40, 108, 0.8);
+    z-index: 0;
+}
+
+.text, .button {
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    color: white;
+    max-width: 40%;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.button {
+    border: 3px solid lightblue;
+    width: 20%;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 2%;
+    color: var(--color-blue);
+    font-weight: 600;
+}
