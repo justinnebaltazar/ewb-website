@@ -5,18 +5,25 @@ import { About } from './components/About/About';
 import { Banner } from "./components/Banner/Banner";
 import { Testimonial } from './components/Testimonial/Testimonial';
 import { Contact } from './components/Contact/Contact';
+import { News } from './components/News/News';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Banner/>
-      <Testimonial/>
-      <Contact/>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path='/' element={[
+            <Navbar/>,
+            <Hero/>,
+            <About/>,
+            <Banner/>,
+            <Testimonial/>,
+            <News/>,
+            <Contact/>,
+      ]}/>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
