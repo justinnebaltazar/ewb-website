@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Leadership Update at Engineers Without Borders Canada", 
+        "datePublished": "Tuesday, January 21, 2025",
+        "description": "For more than two decades, Engineers Without Borders Canada has empowered leaders, fostered innovation, and supported systemic change to build a more equitable and sustainable world.", 
+        "filePath": "./images/news/leadership-photo.png"
+    }, 
+    {
+        "title": "Celebrating International Volunteer Day with Engineers Without Borders Canada", 
+        "datePublished": "Wednesday, December 4, 2024",
+        "description": "This International Volunteer Day, we celebrate the impactful work of Engineers Without Borders Canada (EWB). With over 32 university chapters and 8 professional chapters across the country, EWB empowers a network of passionate volunteers to address the root causes of poverty and inequity worldwide.", 
+        "filePath": "./images/news/volunteer-day.png"
+    },
+    {
+        "title": "Chapter Spotlight: How UofT EWB is Engineering Change in Toronto", 
+        "datePublished": "Friday, September 27, 2024",
+        "description": "With a new school year just around the corner, many of our 20+ EWB academic chapters across Canada have started their recruitment processes. Located at the heart of Ontario, our University of Toronto chapter is busy with recruitment, setting up projects, and preparing for xChange 2024!", 
+        "filePath": "./images/news/uoft-spotlight.png"
+    },
+    {
+        "title": "Chapter Spotlight: How EWB UPEI is Engineering Change in Prince Edward Island", 
+        "datePublished": "Thursday, August 22, 2024",
+        "description": "With a new school year just around the corner, many of our 20+ EWB academic chapters across Canada have started their recruitment processes. Our University of Prince Edward Island (UPEI) chapter has already hit the ground running, and is working hard, creating impactful changes within the community.", 
+        "filePath": "./images/news/upei-spotlight.png"
+    },
+    {
+        "title": "Your Questions Answered: Engineering Brighter Tomorrows", 
+        "datePublished": "Thursday, August 1, 2024",
+        "description": "Engineering Brighter Tomorrows (EBT) addresses the needs of educational and healthcare facilities in Zambia and Malawi through tailored solar energy solutions and digital inclusion. On June 27th, 2024, we held a webinar about how strategic solar energy projects can drive systemic change in the region and create lasting impacts in underserved communities. Here are some of the unanswered questions from the event.", 
+        "filePath": "./images/news/brighter-tomorrow.png"
+    }
+]
