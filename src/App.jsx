@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import styles from './App.module.css';
 import { Navbar } from "./components/Navbar/Navbar";
 import { Hero } from "./components/Hero/Hero";
 import { About } from './components/About/About';
@@ -12,18 +12,33 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={[
-            <Navbar/>,
-            <Hero/>,
-            <About/>,
-            <Banner/>,
-            <Testimonial/>,
-            <News/>,
-            <Contact/>,
-      ]}/>
+        {/* Home page components */}
+        <Route 
+          path="/" 
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <About />
+              <Banner />
+              <Testimonial />
+              <News />
+              <Contact />
+            </>
+          } 
+        />
+
+        {/* Events page */}
+        <Route 
+          path="/events" 
+          element={
+          <>
+          <Navbar />
+          </>} 
+        />
       </Routes>
     </Router>
   );
 }
 
-export default App
+export default App;
