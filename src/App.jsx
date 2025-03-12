@@ -21,8 +21,8 @@ function App() {
               <Hero />
               <About />
               <Banner />
-              <Testimonial />
               <News />
+              <Testimonial />
               <Contact />
             </>
           } 
