@@ -52,3 +52,21 @@
     display: flex;
     flex-direction: column;
 }
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+    color: var(--color-blue);
+}
+
+@media (max-width: 1200px) {
+
+    .newsContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

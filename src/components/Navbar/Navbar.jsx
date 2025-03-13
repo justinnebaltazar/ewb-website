@@ -7,15 +7,15 @@ export const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <img className={styles.logo} src="./images/logos/ewb-logo.png" alt="ewb-logo" />
+                <img className={styles.logo} src="/images/logos/ewb-logo.png" alt="ewb-logo" />
             </div>
             <div className={styles.menu}>
-                <img className={styles.menuBtn} 
-                src={menuOpen ? "./images/navbar/closeBtn.png" : "./images/navbar/menuBtn.png"} 
-                alt="menu-button" 
-                onClick={() => {
-                    setMenuOpen(!menuOpen)
-                }}/>
+            <img
+                className={styles.menuBtn}
+                src={menuOpen ? "/images/navbar/closeBtn.png" : "/images/navbar/menuBtn.png"}
+                alt="menu-button"
+                onClick={() => setMenuOpen(!menuOpen)}
+            />
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => {setMenuOpen(false)}}>
                     <li>About us</li>
