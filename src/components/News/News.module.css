@@ -17,6 +17,7 @@
     color: white;
     font-family: var(--font-poppins);
     width: 80%;
+    padding-top: 40px;
 }
 
 .title {

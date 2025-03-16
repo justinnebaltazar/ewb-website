@@ -1,5 +1,6 @@
 import { useState } from "react"
 import styles from "../Navbar/Navbar.module.css"
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ export const Navbar = () => {
                     onClick={() => {setMenuOpen(false)}}>
                     <li>About us</li>
                     <li>What we do</li>
-                    <li>Get involved</li>
+                    <li><Link to='/get-involved'>Get involved</Link></li>
                     <li>Contact us</li>
                     <li>Login</li>
                 </ul>
