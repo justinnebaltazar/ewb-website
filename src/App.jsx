@@ -7,6 +7,7 @@ import { Testimonial } from './components/Testimonial/Testimonial';
 import { Contact } from './components/Contact/Contact';
 import { News } from './components/News/News';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Projects } from './components/Projects/Projects';
 
 function App() {
   return (
@@ -35,6 +36,17 @@ function App() {
           <>
           <Navbar />
           </>} 
+        />
+
+        {/* Get involved page  */}
+        <Route
+          path="/get-involved"
+          element={
+            <>
+              <Navbar/>
+              <Projects/> 
+            </>
+          }
         />
       </Routes>
     </Router>
