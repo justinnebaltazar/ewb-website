@@ -72,3 +72,82 @@
     color: white;
     padding: 5px; 
 }
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .subheader {
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .subheader {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .goal {
+        width: 100%;
+        padding-top: 30px;
+    }
+    
+    .goalsContainer {
+        padding: 10px 5% 0;
+    }
+    
+    .quotes {
+        width: 90%;
+        gap: 25px;
+    }
+    
+    .quotes h3 {
+        font-size: 18px;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .subheader, .desc {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+    .button {
+        width: 40%;
+    }
+    
+    .quotes {
+        width: 85%;
+    }
+}

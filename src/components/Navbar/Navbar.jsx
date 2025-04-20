@@ -21,9 +21,8 @@ export const Navbar = () => {
                     onClick={() => {setMenuOpen(false)}}>
                     <li>About us</li>
                     <li>What we do</li>
-                    <li><Link to='/get-involved'>Get involved</Link></li>
+                    <li><Link to='/get-involved' className={styles.link}>Get involved</Link></li>
                     <li>Contact us</li>
-                    <li>Login</li>
                 </ul>
             </div>
         </nav>

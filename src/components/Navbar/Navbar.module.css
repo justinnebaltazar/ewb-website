@@ -9,37 +9,140 @@
     font-family: var(--font-poppins);
     color: var(--color-blue);
     text-transform: uppercase;
-}
-
-.logo {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.logo img {
-    width: 60%;
-    min-width: 25%;
+    z-index: 1000;
 }
 
 .menu {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     flex-grow: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.logo {
+    margin-right: 20px;
 }
 
 .menuItems {
     display: flex;
-    gap: 47px;
+    gap: 25px;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     white-space: nowrap;
     flex-wrap: nowrap;
-    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-left: 0;
 }
 
+ul li {
+    margin-top: 10px;
+}
+
+ul li .link {
+    text-decoration: none;
+}
+
+.menuItems li .link:visited {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.menuItems li .link:hover {
+    color: lightblue;
+}
 
 .menuBtn {
     display: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 900px) {
+    .logo {
+        margin-right: 30px;
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-blue);
+        color: white;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+    }
+
+    .menuOpen {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 200px;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menuItems li {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    
+    ul li {
+        color: white;
+    }
+
+    .menuItems li .link:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menuItems li .link:hover {
+        color: lightblue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    .menuBtn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menuOpen {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 175px;
+    }
+
+    .menuItems li {
+        font-size: 16px;
+        padding: 8px 0;
+    }
 }
