@@ -1,17 +1,19 @@
 @import url("../../variables.css");
 
-.container {
-    background-color: white;
+* {
     font-family: var(--font-poppins);
-    color: black;
-    height: 30vh;
+}
+
+.container {
+    background-color: var(--color-blue);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.links {
+.contact {
     list-style-type: none;
     font-size: 24px; 
     display: flex;
@@ -20,7 +22,76 @@
 }
 
 .title {
-    padding-top: 20px;
     font-size: 48px;
     font-weight: 600;
 }
+
+.register {
+    background-color: white;
+    font-size: 18px;
+    color: var(--color-blue);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+
+.top {
+    padding-top: 90px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid white;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.footerSection h3 {
+    text-transform: capitalize;
+}
+
+.footerSection ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerSection {
+        width: 100%;
+    }
+}
+

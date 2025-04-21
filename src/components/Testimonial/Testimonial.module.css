@@ -28,7 +28,7 @@
     text-align: justify;
     overflow: hidden;
     max-width: 100%;
-    word-break: break-word;
+    word-break: normal;
     word-spacing: -2px;
     text-align: justify;
     overflow-wrap: break-word; 
@@ -36,21 +36,84 @@
 }
 
 .author {
-
     font-style: italic;
     padding-top: 45px;
     font-size: 24px;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .author, .quote {
     color: var(--color-blue);
 }
 
-
 .quote {
     max-width: 60%;
     font-size: 32px;
     padding-top: 40px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1096px) {
+    .quote {
+        font-size: 28px;
+        padding-top: 35px;
+        max-width: 70%;
+    }
+
+    .quote::before {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .quote {
+        font-size: 24px;
+        padding-top: 30px;
+        max-width: 80%;
+    }
+
+    .author {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quote {
+        padding-top: 15px;
+        font-size: 22px;
+        max-width: 90%;
+    }
+
+    .author {
+        max-width: 80%;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+    .quote::before {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .testimonial {
+        padding: 50px;
+    }
+
+    .quote {
+        padding-top: 10px;
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .author {
+        font-size: 16px;
+    }
+
+    .quote::before {
+        font-size: 40px;
+        text-align: left;
+        word-break: normal;
+    }
 }
