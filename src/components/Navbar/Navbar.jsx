@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "../Navbar/Navbar.module.css"
 import { Link } from "react-router-dom";
+import { Menu } from "./Menu";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +25,9 @@ export const Navbar = () => {
                     <li><Link to='/get-involved' className={styles.link}>Get involved</Link></li>
                     <li>Contact us</li>
                 </ul>
+
+                {menuOpen && <Menu setMenuOpen={setMenuOpen} />}
+
             </div>
         </nav>
     )
