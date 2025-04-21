@@ -62,6 +62,11 @@
     font-weight: bold;
 }
 
+.regLink {
+    text-decoration: none;
+    color: var(--color-blue)
+}
+
 @media screen and (max-width: 1220px) {
     .title {
         font-size: 100px;

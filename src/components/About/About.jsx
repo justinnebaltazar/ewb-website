@@ -1,5 +1,6 @@
 import styles from "../About/About.module.css"
-import goals from "../../data/about.json"
+import goals from "../../data/goals.json"
+import { Link } from "react-router-dom"
 
 export const About = () => {
     return (
@@ -15,7 +16,7 @@ export const About = () => {
                         <h2 className={styles.title}>{goal.title}</h2>
                         <h4 className={styles.subheader}>{goal.subheading}</h4>
                         <p className={styles.desc}>{goal.description}</p>
-                        <div className={styles.button}>Find out more!</div>
+                        <div className={styles.button}><Link to={goal.link} target="_blank" rel="noopener noreferrer" className={styles.link}>Find out more!</Link></div>
                     </div>
                 ))}
             </div>

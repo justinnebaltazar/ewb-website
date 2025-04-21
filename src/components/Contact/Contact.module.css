@@ -24,6 +24,7 @@
 .title {
     font-size: 48px;
     font-weight: 600;
+    padding-bottom: 10px;
 }
 
 .register {
@@ -37,11 +38,24 @@
     text-align: center;
 }
 
-.link {
+.register:hover {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+.regLink {
     text-decoration: none;
     color: var(--color-blue);
 }
 
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: lightblue;
+}
 
 .top {
     padding-top: 90px;
@@ -53,14 +67,13 @@
 }
 
 .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-top: 1px solid white;
+    padding: 50px 20px 80px;
+    border-top: 1px solid #d2d2d2;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footerSection {
@@ -69,8 +82,10 @@
     min-width: 150px;
 }
 
-.footerSection h3 {
-    text-transform: capitalize;
+.secTitle {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .footerSection ul {
@@ -81,6 +96,25 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    background-color: #002543;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #002543;
+    border-radius: 5px;
+}
+
+.end h3 {
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {

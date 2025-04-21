@@ -6,12 +6,12 @@ export const Contact = () => {
         <section className={styles.container}>
             <div className={styles.top}>
                 <h3 className={styles.title}>Interested? Join EWB</h3>
-                <h1 className={styles.register}> <Link to="https://go.sfss.ca/clubs/927/info" target="_blank" rel="noopener noreferrer" className={styles.link}>Register as a member!</Link></h1>
+                <h1 className={styles.register}> <Link to="https://go.sfss.ca/clubs/927/info" target="_blank" rel="noopener noreferrer" className={styles.regLink}>Register as a member!</Link></h1>
             </div>
             <div className={styles.footer}>
 
                 <div className={styles.footerSection}>
-                    <h3>Projects</h3>
+                    <h3 className={styles.secTitle}>Projects</h3>
                     <ul>
                         <li>Project 1</li>
                         <li>Project 2</li>
@@ -20,23 +20,27 @@ export const Contact = () => {
                 </div>
 
                 <div className={styles.footerSection}>
-                    <h3>Contact us</h3>
+                    <h3 className={styles.secTitle}>Contact us</h3>
                     <ul className={styles.contact}>
-                        <li>Instagram</li>
-                        <li>Discord</li>
-                        <li>EWB Canada</li>
+                        <li><Link to="https://www.instagram.com/ewb.sfu/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</Link></li>
+                        <li><Link to="https://discord.com/invite/pBGK5rx7hM" target="_blank" rel="noopener noreferrer" className={styles.link}>Discord</Link></li>
+                        <li><Link to="https://docs.google.com/forms/d/e/1FAIpQLSfRZQX7wzaqc-uiasgSEBilxkVSSh-rL4mXwABkIxdniKJRmg/viewform" target="_blank" rel="noopener noreferrer" className={styles.link}>Leave a Question</Link></li>
                     </ul>
                 </div>
 
                 <div className={styles.footerSection}>
-                    <h3>EWB Canada</h3>
+                    <h3 className={styles.secTitle}>EWB Canada</h3>
                     <ul>
-                        <li>Instagram</li>
-                        <li>Learn more</li>
+                        <li><Link to="https://www.ewb.ca/en/" target="_blank" rel="noopener noreferrer" className={styles.link}>Learn more</Link></li>
+                        <li><Link to="https://www.instagram.com/ewb_canada/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</Link></li>
+                        <li><Link to="https://www.linkedin.com/company/engineers-without-borders-canada/" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</Link></li>
                     </ul>
                 </div>
             </div>
-
+            
+            <div className={styles.end}>
+                <h3>Engineering Without Borders @ Simon Fraser University</h3>
+            </div>
         </section>
         
     )

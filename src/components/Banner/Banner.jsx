@@ -1,4 +1,5 @@
 import styles from "../Banner/Banner.module.css"
+import { Link } from "react-router-dom"
 
 export const Banner = () => {
     return (
@@ -8,7 +9,7 @@ export const Banner = () => {
                 <h3 className={styles.subtitle}>EWB chapter members at universities and professional institutions across Canada, who form a network of socially-conscious engineers and technologists. </h3>
             </div>
             <div className={styles.button}>
-                Join EWB @ SFU!
+            <Link to="https://go.sfss.ca/clubs/927/info" target="_blank" rel="noopener noreferrer" className={styles.regLink}>Join EWB @ SFU</Link>
             </div>
         </section>
     )
