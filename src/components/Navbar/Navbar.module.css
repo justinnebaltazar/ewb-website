@@ -5,11 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
+    padding: 20px 11%;
     font-family: var(--font-poppins);
     color: var(--color-blue);
-    text-transform: uppercase;
     z-index: 1000;
+}
+
+
+
+span {
+    text-transform: uppercase;
 }
 
 .menu {
@@ -33,10 +38,6 @@
     height: auto;
 }
 
-.logo {
-    margin-right: 20px;
-}
-
 .menuItems {
     display: flex;
     gap: 25px;
@@ -51,12 +52,21 @@
     padding-left: 0;
 }
 
-ul li {
+.menuItems li {
+    position: relative;
+    cursor: pointer;
     margin-top: 10px;
+    color: var(--color-blue);
 }
 
-ul li .link {
+.menuItems li:hover {
+    color: lightblue;
+}
+
+.link {
     text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .menuItems li .link:visited {
@@ -70,6 +80,81 @@ ul li .link {
 
 .menuBtn {
     display: none;
+}
+
+/* DESKTOP dropdown (only shown when more than 900px width) */
+.dropdownWrapper {
+    position: relative;
+}
+
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%; /* drop just below the nav item */
+    left: 30%;
+    transform: translateX(-50%); /* center it */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    width: 70vw;
+    min-height: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 999;
+    margin-top: 10px;
+}
+
+.dropdownLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.dropdownLeft ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dropdownLeft ul li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dropdownRight {
+    flex: 2;
+    padding-left: 2rem;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    color: var(--color-blue)
+}
+
+.dropdownMenu a,
+.dropdownMenu .link {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: normal;
+    display: block;
+}
+
+.dropdownMenu a:hover,
+.dropdownMenu .link:hover {
+    color: lightblue;
+}
+
+
+.dropdownRight p {
+    font-weight: lighter;
+    font-size: 15px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Media queries for responsiveness */
@@ -86,10 +171,11 @@ ul li .link {
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         font-size: 14px;
+        align-items: flex-start;
     }
 
     .menuOpen {
-        display: none;
+        display: flex;
         position: absolute;
         top: 100%;
         right: 10%;
@@ -106,10 +192,8 @@ ul li .link {
     .menuItems li {
         font-size: 18px;
         padding: 10px 0;
-    }
-    
-    ul li {
         color: white;
+        width: 100%;
     }
 
     .menuItems li .link:visited {
@@ -134,7 +218,7 @@ ul li .link {
     }
 
     .menuOpen {
-        display: none;
+        display: flex;
         position: absolute;
         top: 100%;
         right: 10%;

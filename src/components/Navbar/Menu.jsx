@@ -60,9 +60,11 @@ export const Menu = ({ setMenuOpen }) => {
           </h3>
           {openDropdown === 2 && (
             <ul className={styles.menuItems}>
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
+              <li><Link to="/project/bionics" target="_blank" rel="noopener noreferrer" className={styles.link}>Bionics Project</Link></li>
+              <li><Link to="/project/firefly" target="_blank" rel="noopener noreferrer" className={styles.link}>Firefly</Link></li>
+              <li><Link to="/project/enggage" target="_blank" rel="noopener noreferrer" className={styles.link}>ENG-Gage</Link></li>
+              <li><Link to="/project/sustainee" target="_blank" rel="noopener noreferrer" className={styles.link}>Sustain-EE</Link></li>
+              <li><Link to="/project/projectr3d" target="_blank" rel="noopener noreferrer" className={styles.link}>Project R3D</Link></li>
             </ul>
           )}
         </div>

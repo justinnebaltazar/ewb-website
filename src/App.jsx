@@ -8,6 +8,7 @@ import { Contact } from './components/Contact/Contact';
 import { News } from './components/News/News';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Projects } from './components/Projects/Projects';
+import { ProjectPage } from './components/Projects/ProjectPage';
 
 function App() {
   return (
@@ -48,6 +49,25 @@ function App() {
             </>
           }
         />
+
+        {/* Link to each project page */}
+        <Route
+          path="/project/:id"
+          element={
+            <>
+              <ProjectPage/>
+            </>
+          }
+
+        />
+
+        {/* Meet the team page */}
+        <Route path="/meet-the-team"
+        element={
+        <>
+          <Navbar/>
+        </>
+      }/>
       </Routes>
     </Router>
   );
