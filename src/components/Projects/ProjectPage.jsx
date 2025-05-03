@@ -129,9 +129,9 @@ export const ProjectPage = () => {
       <div className={styles.footer}>
         <h3>How can you get involved?</h3>
         <ul className={styles.footerList}>
-          <li>Join the EWB SFU Discord</li>
-          <li>Follow us @ewb.sfu on Instagram for the latest updates</li>
-          <li>Fill out the Google Form for the design team of your choice!</li>
+          <li>Join the <Link to="https://discord.com/invite/pBGK5rx7hM" target="_blank" rel="noopener noreferrer" className={styles.link }>EWB SFU Discord</Link></li>
+          <li>Follow us <Link to="https://www.instagram.com/ewb.sfu/" target="_blank" rel="noopener noreferrer" className={styles.link}>@ewb.sfu</Link> on Instagram for the latest updates</li>
+          <li>Fill out the <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfRZQX7wzaqc-uiasgSEBilxkVSSh-rL4mXwABkIxdniKJRmg/viewform" target="_blank" rel="noopener noreferrer" className={styles.link}>Google Form</Link> for the design team of your choice!</li>
         </ul>
       </div>
     </section>

@@ -415,6 +415,15 @@
 
 }
 
+.link {
+    text-decoration: none;
+    color: var(--color-white-text);
+}
+
+.link:hover {
+    color: lightblue;
+}
+
 @media screen and (max-width: 800px) {
     .hiringList {
         flex-wrap: wrap;
