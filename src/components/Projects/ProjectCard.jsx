@@ -1,10 +1,14 @@
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
-export const ProjectCard = ({ project : { projectName, subheader, description, workDescription, listTitle, listItems, filePath, link}}) => {
+export const ProjectCard = ({ project : { projectName, subheader, description, workDescription, listTitle, listItems, filePath, link, id}}) => {
+
+    // Click projectCard to go to specific venture's page
+    const navigate = useNavigate();
 
     const handleClick = () => {
-        window.open(link, "_blank");
+        navigate(`/project/${id}`);
     };
 
     return (

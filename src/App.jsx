@@ -55,6 +55,7 @@ function App() {
           path="/project/:id"
           element={
             <>
+              <Navbar/>
               <ProjectPage/>
             </>
           }

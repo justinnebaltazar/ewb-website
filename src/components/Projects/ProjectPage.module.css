@@ -1,0 +1,422 @@
+@import "../../variables.css";
+
+* {
+  font-family: var(--font-poppins);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.textContainer {
+    flex: 1;
+    text-align: center;
+}
+  
+.imageContainer {
+    flex: 1;
+    text-align: right;
+}
+  
+.projectImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px 20px 0px 20px;
+  background-color: var(--color-background);
+  width: 100vw;
+}
+
+.notFound {
+  text-align: center;
+  font-size: 24px;
+  margin: 100px auto;
+  color: var(--color-blue);
+}
+
+.projTitle {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.subheader {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--color-blue);
+  font-weight: normal;
+}
+
+.imageContainer {
+  background-color: var(--color-blue);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid var(--color-blue);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  min-height: 300px;
+}
+
+.projectImage {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.about {
+  width: 100vw;
+  background-color: var(--color-blue);
+  color: var(--color-white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 20px;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 90%;
+  max-width: 950px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.workDesc {
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.leadInfo {
+  margin: 25px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.leadLabel {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.listSection {
+  margin: 25px 0;
+}
+
+.listTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.benefitsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefitsList li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 18px;
+}
+
+.benefitsList li:before {
+  content: "•";
+  position: absolute;
+  left: 10px;
+  color: var(--color-white-text);
+}
+
+.joinBtnContainer {
+  margin-top: 30px;
+}
+
+.joinBtn {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.joinLink {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.joinLink:hover {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.status {
+  width: 100vw;
+  background-color: #a7192f ;
+  padding: 30px;
+}
+
+.status h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.status p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Subteams Styling */
+.subteamsContainer {
+  width: 100vw;
+  padding: 100px 20px;
+  background-color: #a7192f;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.sTitle {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: var(--color-white-text); 
+}
+
+.subteams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.subteam {
+  width: 30%;
+  min-width: 300px;
+  background-color: var(--color-background);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subteamTitle {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--color-blue);
+}
+
+.subteamDesc {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.subteamDesc li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.subteamLead {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* About points styling */
+.extContainer {
+  background-color: var(--color-background);
+  text-align: center;
+  padding: 80px 30px;
+  width: 100vw;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extTitle {
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: var(--color-blue);
+}
+
+
+.extended {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 100%;
+}
+
+.point {
+  font-size: 18px;
+  width: 20%;
+  min-width: 250px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiring Section */
+.hiringContainer {
+  width: 100vw;
+  background-color: white;
+  padding: 60px 20px;
+}
+
+.hiringList {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hiringPosition {
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--color-background);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.positionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--color-blue);
+}
+
+.positionDetail {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.positionDescription {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--color-blue);
+  padding: 60px;
+  text-align: center;
+  color: var(--color-white-text);
+  
+}
+
+.footer h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.footerList {
+  list-style-type: number;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.footerList li {
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .projTitle {
+    font-size: 32px;
+  }
+  
+  .subheader {
+    font-size: 20px;
+  }
+  
+  .content, .status {
+    width: 95%;
+  }
+  
+  .extended {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .point {
+    width: 90%;
+  }
+  
+  .subteam {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+    .hiringList {
+        flex-wrap: wrap;
+    }
+}
