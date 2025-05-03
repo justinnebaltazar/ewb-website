@@ -30,6 +30,7 @@ span {
     justify-content: flex-start;
     flex-shrink: 0;
     width: 150px;
+    cursor: pointer;
 }
 
 .logo img {
@@ -59,9 +60,6 @@ span {
     color: var(--color-blue);
 }
 
-.menuItems li:hover {
-    color: lightblue;
-}
 
 .link {
     text-decoration: none;
@@ -74,8 +72,9 @@ span {
     color: var(--color-blue);
 }
 
+/* the actual hover */
 .menuItems li .link:hover {
-    color: lightblue;
+    color: #a7192f;
 }
 
 .menuBtn {
@@ -96,17 +95,24 @@ span {
     position: absolute;
     top: 100%; /* drop just below the nav item */
     left: 30%;
-    transform: translateX(-50%); /* center it */
     background-color: white;
     display: flex;
     flex-direction: row;
     padding: 1.5rem;
-    width: 70vw;
+    width: 50vw;
     min-height: 180px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     z-index: 999;
     margin-top: 10px;
+}
+
+.dropdownMenuL {
+    transform: translateX(-50%); /* center it */
+}
+
+.dropdownMenuR {
+    transform: translateX(-80%);
 }
 
 .dropdownLeft {
@@ -141,11 +147,6 @@ span {
     color: var(--color-blue);
     font-weight: normal;
     display: block;
-}
-
-.dropdownMenu a:hover,
-.dropdownMenu .link:hover {
-    color: lightblue;
 }
 
 
@@ -201,9 +202,6 @@ span {
         color: white;
     }
 
-    .menuItems li .link:hover {
-        color: lightblue;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -228,5 +226,15 @@ span {
     .menuItems li {
         font-size: 16px;
         padding: 8px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .link {
+        display: none;
+    }
+
+    .dropdownWrapper {
+        display: none;
     }
 }

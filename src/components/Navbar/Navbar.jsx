@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import styles from "../Navbar/Navbar.module.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu } from "./Menu";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -30,19 +31,14 @@ export const Navbar = () => {
         }
     };
 
-    // For mobile, we need a different handler to toggle dropdowns
-    const handleMobileDropdown = (index, event) => {
-        if (isMobile) {
-            event.preventDefault();
-            event.stopPropagation();
-            toggleDropdown(index);
-        }
-    };
+    const handleLogoClick = () => {
+        navigate('/');
+    }
 
     return (
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <img className={styles.logo} src="/images/logos/ewb-logo.png" alt="ewb-logo" />
+                <img className={styles.logo} src="/images/logos/ewb-logo.png" alt="ewb-logo" onClick={handleLogoClick}/>
             </div>
             <div className={styles.menu}>
                 <img
@@ -57,7 +53,7 @@ export const Navbar = () => {
                     >
                         <span className={styles.link}>About us</span>
                         {openDropdown === 0 && (
-                            <div className={styles.dropdownMenu}>
+                            <div className={`${styles.dropdownMenu} ${styles.dropdownMenuL}`}>
                                 <div className={styles.dropdownLeft}>
                                     <Link to="/meet-the-team" className={styles.link}>Meet the team</Link>
                                     <a href="https://www.ewb.ca/en/" target="_blank" rel="noopener noreferrer" className={styles.link}>EWB Canada</a>
@@ -75,7 +71,7 @@ export const Navbar = () => {
                     >
                         <span className={styles.link}>What we do</span>
                         {openDropdown === 1 && (
-                            <div className={styles.dropdownMenu}>
+                            <div className={`${styles.dropdownMenu} ${styles.dropdownMenuL}`}>
                                 <div className={styles.dropdownLeft}>
                                     <Link className={styles.link}>Goals</Link>
                                     <Link to="/get-involved" className={styles.link}>Projects</Link>
@@ -93,14 +89,14 @@ export const Navbar = () => {
                     >
                         <span className={styles.link}>Get involved</span>
                         {openDropdown === 2 && (
-                            <div className={styles.dropdownMenu}>
+                            <div className={`${styles.dropdownMenu} ${styles.dropdownMenuR}`}>
                                 <div className={styles.dropdownLeft}>
                                     <ul>
                                         <li><Link to="/project/bionics" className={styles.link}>Bionics Project</Link></li>
-                                        <li><Link to="/project/firefly" className={styles.link}>Firefly</Link></li>
                                         <li><Link to="/project/enggage" className={styles.link}>ENG-Gage</Link></li>
-                                        <li><Link to="/project/sustainee" className={styles.link}>Sustain-EE</Link></li>
+                                        <li><Link to="/project/firefly" className={styles.link}>Firefly</Link></li>
                                         <li><Link to="/project/projectr3d" className={styles.link}>Project R3D</Link></li>
+                                        <li><Link to="/project/sustainee" className={styles.link}>Sustain-EE</Link></li>
                                     </ul>
                                 </div>
                                 <div className={styles.dropdownRight}>
@@ -116,7 +112,7 @@ export const Navbar = () => {
                     >
                         <span className={styles.link}>Contact us</span>
                         {openDropdown === 3 && (
-                            <div className={styles.dropdownMenu}>
+                            <div className={`${styles.dropdownMenu} ${styles.dropdownMenuR}`}>
                                 <div className={styles.dropdownLeft}>
                                     <ul>
                                         <li><a href="https://www.instagram.com/ewb.sfu/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a></li>
