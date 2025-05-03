@@ -101,7 +101,7 @@ export const Navbar = () => {
                                 </div>
                                 <div className={styles.dropdownRight}>
                                     <h4>Join a Project</h4>
-                                    <p>Contribute your skills to make a difference with our active projects.</p>
+                                    <p>Contribute your skills to make a difference with our active ventures.</p>
                                 </div>
                             </div>
                         )}

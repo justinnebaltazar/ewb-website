@@ -9,6 +9,7 @@ import { News } from './components/News/News';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Projects } from './components/Projects/Projects';
 import { ProjectPage } from './components/Projects/ProjectPage';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <News />
               <Testimonial />
               <Contact />
+              <Footer/>
             </>
           } 
         />
@@ -46,6 +48,7 @@ function App() {
             <>
               <Navbar/>
               <Projects/> 
+              <Footer/>
             </>
           }
         />
@@ -57,6 +60,7 @@ function App() {
             <>
               <Navbar/>
               <ProjectPage/>
+              <Footer/>
             </>
           }
 
@@ -71,6 +75,7 @@ function App() {
       }/>
       </Routes>
     </Router>
+    
   );
 }
 

@@ -39,10 +39,6 @@ export const Contact = () => {
                     </ul>
                 </div>
             </div>
-            
-            <div className={styles.end}>
-                <h3>Engineering Without Borders @ Simon Fraser University</h3>
-            </div>
         </section>
         
     )

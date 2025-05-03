@@ -1,0 +1,15 @@
+.end {
+    display: flex;
+    background-color: #002543;
+    width: 100%;
+    font-weight: lighter;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.end h3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
