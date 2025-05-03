@@ -45,7 +45,7 @@ export const Menu = ({ setMenuOpen }) => {
           {openDropdown === 1 && (
             <ul className={styles.menuItems}>
               <li>Goals</li>
-              <li><Link to="/get-involved" className={styles.link} onClick={() => setMenuOpen(false)}>Projects</Link></li>
+              <li><Link to="/get-involved" className={styles.link} onClick={() => setMenuOpen(false)}>Ventures</Link></li>
             </ul>
           )}
         </div>
@@ -61,10 +61,10 @@ export const Menu = ({ setMenuOpen }) => {
           {openDropdown === 2 && (
             <ul className={styles.menuItems}>
               <li><Link to="/project/bionics" target="_blank" rel="noopener noreferrer" className={styles.link}>Bionics Project</Link></li>
+              <li><Link to="/project/enggage" target="_blank" rel="noopener noreferrer" className={styles.link}>ENG-GAGE</Link></li>
               <li><Link to="/project/firefly" target="_blank" rel="noopener noreferrer" className={styles.link}>Firefly</Link></li>
-              <li><Link to="/project/enggage" target="_blank" rel="noopener noreferrer" className={styles.link}>ENG-Gage</Link></li>
-              <li><Link to="/project/sustainee" target="_blank" rel="noopener noreferrer" className={styles.link}>Sustain-EE</Link></li>
               <li><Link to="/project/projectr3d" target="_blank" rel="noopener noreferrer" className={styles.link}>Project R3D</Link></li>
+              <li><Link to="/project/sustainee" target="_blank" rel="noopener noreferrer" className={styles.link}>SUSTAIN-EE</Link></li>
             </ul>
           )}
         </div>

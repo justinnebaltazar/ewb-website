@@ -74,7 +74,7 @@ export const Navbar = () => {
                             <div className={`${styles.dropdownMenu} ${styles.dropdownMenuL}`}>
                                 <div className={styles.dropdownLeft}>
                                     <Link className={styles.link}>Goals</Link>
-                                    <Link to="/get-involved" className={styles.link}>Projects</Link>
+                                    <Link to="/get-involved" className={styles.link}>Ventures</Link>
                                 </div>
                                 <div className={styles.dropdownRight}>
                                     <h4>Our Impact</h4>
@@ -93,10 +93,10 @@ export const Navbar = () => {
                                 <div className={styles.dropdownLeft}>
                                     <ul>
                                         <li><Link to="/project/bionics" className={styles.link}>Bionics Project</Link></li>
-                                        <li><Link to="/project/enggage" className={styles.link}>ENG-Gage</Link></li>
+                                        <li><Link to="/project/enggage" className={styles.link}>ENG-GAGE</Link></li>
                                         <li><Link to="/project/firefly" className={styles.link}>Firefly</Link></li>
                                         <li><Link to="/project/projectr3d" className={styles.link}>Project R3D</Link></li>
-                                        <li><Link to="/project/sustainee" className={styles.link}>Sustain-EE</Link></li>
+                                        <li><Link to="/project/sustainee" className={styles.link}>SUSTAIN-EE</Link></li>
                                     </ul>
                                 </div>
                                 <div className={styles.dropdownRight}>

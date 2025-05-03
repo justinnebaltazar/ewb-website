@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Projects } from './components/Projects/Projects';
 import { ProjectPage } from './components/Projects/ProjectPage';
 import { Footer } from './components/Footer/Footer';
+import { Events } from './components/Events/Events';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           element={
           <>
           <Navbar />
+          <Events/>
           </>} 
         />
 
@@ -71,6 +73,8 @@ function App() {
         element={
         <>
           <Navbar/>
+          <Events/>
+          <Footer/>
         </>
       }/>
       </Routes>

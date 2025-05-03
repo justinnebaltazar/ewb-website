@@ -14,10 +14,10 @@ export const Contact = () => {
                     <h3 className={styles.secTitle}>Ventures</h3>
                     <ul>
                         <li>Bionics Project</li>
-                        <li>Eng-gage</li>
+                        <li>ENG-GAGE</li>
                         <li>Firefly</li>
                         <li>Project R3D</li>
-                        <li>Sustain-ee</li>
+                        <li>SUSTAIN-EE</li>
                     </ul>
                 </div>
 
