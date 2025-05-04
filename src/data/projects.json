@@ -1,0 +1,123 @@
+[
+    {
+        "id": "enggage",
+        "projectName": "ENG-Gage",
+        "subheader": "Visiting a school to raise awareness",
+        "description": "ENG-GAGE is an ongoing initiative dedicated to teaching younger students/communities about applications of engineering and other STEM-related topics. ENG-GAGE runs various activities throughout the year, including presenting, hosting competitions, and running projects/labs!",
+        "workDescription": null,
+        "listTitle": "WHY JOIN ENG-GAGE?",
+        "listItems": ["📝 Gain professional experience event-planning, presenting, and hosting events for career development", "🤝 Learn more about what EWB does and how we make a difference in the local community", "❤️ Give back to the community by educating future changemakers"],
+        "filePath": "projects/engage-image.png", 
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfBroRB_UMFoSRKLjbFr1qUIfRadK9JgUENp6cBhX9TQqpDqg/viewform", 
+        "newsList": {
+            "events": {
+                
+            }
+            
+        },
+
+        "hiring": [
+            {
+                "role": "General Volunteers",
+                "duration": "Summer to Fall 2025",
+                "requirements": "Proficient full stack developer",
+                "dept": "Communications Department",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus lobortis blandit. Donec tincidunt sapien sed diam mollis molestie. Suspendisse et diam cursus, maximus enim et, interdum justo. Mauris interdum tortor ut semper luctus. Proin eget convallis metus, id convallis purus. Vivamus tincidunt lorem erat, vel placerat dui tincidunt ac. Nulla luctus scelerisque magna eu commodo. Fusce nec metus sit amet turpis feugiat faucibus. Proin libero lectus, fringilla vitae nisi sit amet, elementum feugiat risus."
+            },
+            {
+                "role": "General Volunteers",
+                "duration": "Summer to Fall 2025",
+                "requirements": "Proficient full stack developer",
+                "dept": "Communications Department",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus lobortis blandit. Donec tincidunt sapien sed diam mollis molestie. Suspendisse et diam cursus, maximus enim et, interdum justo. Mauris interdum tortor ut semper luctus. Proin eget convallis metus, id convallis purus. Vivamus tincidunt lorem erat, vel placerat dui tincidunt ac. Nulla luctus scelerisque magna eu commodo. Fusce nec metus sit amet turpis feugiat faucibus. Proin libero lectus, fringilla vitae nisi sit amet, elementum feugiat risus."
+            }
+        ],
+
+        "mediaList" : {
+            
+        },
+        "projectLead": "Tavleen Sahota"
+    }, 
+    {   
+        "id": "sustainee",
+        "projectName": "SUSTAIN-EE",
+        "subheader": "Solar-powered weather forecasting station", 
+        "description": "An engineering design team aiming to develop efficient, ethical, and cost-effective solar energy for use in rural and remote communities. The solar home system developed by SUSTAIN-EE will provide a more accessible, ethical source of solar energy for developing countries and remote regions lacking electricity.", 
+        "workDescription": "The SUSTAIN-EE team will work along with professors to develop cutting-edge solar power technology using printed solar panels.", 
+        "listTitle": null,
+        "listItems": [],
+        "filePath": "projects/sustain-ee.jpg", 
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfBroRB_UMFoSRKLjbFr1qUIfRadK9JgUENp6cBhX9TQqpDqg/viewform",
+        "newsList": [], 
+        "projectLead": "Vitaliy Veksyler", 
+        "subteams": {
+            "s1": {
+                "title": "Electrical + Solar Subteam",
+                "desc": ["Weather forecasting using a system of sensors and transmitters.", "Use ASCA® thin film solar panels, and use Simulink to simulate our entire system", "Inverter design/power electronics"],
+                "lead": null
+            },
+            "s2": {
+                "title": "Electronics + Software Subteam", 
+                "desc": ["Using low-power microcontrollers and microprocessors such as the ESP32 and the Orange Pi", "Performing weather prediction using statistics and machine learning"], 
+                "lead": "Eric Fung"
+            }, 
+            "s3": {
+                "title": "Mechanical Subteam", 
+                "desc": ["Adjusting the angle of solar panel to the angle of sun rays for maximum power output, known as sun tracking", "Some thermal analysis, looking at more efficient heating for homes"]
+            }
+        }
+    }, 
+    {
+        "id": "bionics",
+        "projectName": "Bionics", 
+        "subheader": "Developing cost-effective bionics for people in need", 
+        "description": "An engineering design team dedicated to representing and supporting biomedical engineers in the creation of a prosthetic limb. The prosthetic developed by the Bionics team will provide a more accessible and affordable alternative for patients who have lost limbs due to various medical circumstances.",
+        "workDescription": "The Bionics team will combine mechanical, technical, electrical, and biological knowledge to develop and design a prosthetic arm by working in sub-teams.",
+        "listTitle": null,
+        "listItems": [],
+        "filePath": "projects/bionics.jpg", 
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfBroRB_UMFoSRKLjbFr1qUIfRadK9JgUENp6cBhX9TQqpDqg/viewform",
+        "newsList":[],
+        "projectLead": "Benjamin Lam", 
+        "subteams": {
+            "s1": {
+                "title": "Mechanical Engineering Subteam",
+                "desc": ["Bones, Joints, Muscles, Interchangeable hand attachment, materials"],
+                "lead": null
+            },
+            "s2": {
+                "title": "Electrical + Computer Engineering Subteam",
+                "desc": ["Signal processing, battery, sensors, guidance system"]
+            }, 
+            "s3": {
+                "title": "Bioengineering, Chemical & Biomedical Engineering Subteam",
+                "desc": ["Human connection point using neurotechnology."]
+            }
+        }
+    }, 
+    {   
+        "id": "firefly",
+        "projectName": "Firefly", 
+        "subheader": "Automated fire suspension/preventative system",
+        "description": "The Firefly system is designed to assist and protect firefighting units in their operations. The firefly system will have various robots that clear heavy fires and smoke along the paths of firefighting units to ensure a safer environment for them to rescue.",
+        "listTitle": null,
+        "listItems": [],
+        "filePath": "projects/temp.jpg",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfBroRB_UMFoSRKLjbFr1qUIfRadK9JgUENp6cBhX9TQqpDqg/viewform",
+        "newsList":[], 
+        "projectLead": ""
+    }, 
+    {
+        "id": "projectr3d", 
+        "projectName": "Project R3D",
+        "subheader": "Filament recycling project",
+        "description": "An engineering design team dedicated to reducing the waster generated by 3D prints by developing a method for recycling it back into usable filament. The filament extruder developed by the Project R3D team will create a more sustainable alternative for 3D printing and help SFU meet its Sustainable Development Goals.", 
+        "workDescription": "The Project R3D team will design a modified version of the Lyman filament extruder focusing on PLA filament.",
+        "filePath": "projects/project-r3d.jpg",
+        "projectLead": "Wayne Zeng", 
+        "about": {
+            "title": "Four Components of Project R3D",
+            "points": ["Shredding: Shred old 3D prints into small pieces to be fed to extruder", "Extrusion: melts shredded pieces and extrudes into filament", "Spooling: Cools and winds filament into a spool", "Firmware and Electronics: Design custom PCBs and wiring for all electronics"]
+        }
+    }
+]
