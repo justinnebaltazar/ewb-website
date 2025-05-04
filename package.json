@@ -1,6 +1,5 @@
 {
   "name": "ewb-website",
-  "homepage": "https://justinnebaltazar.github.io/ewb-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@babel/runtime": "^7.27.1",
