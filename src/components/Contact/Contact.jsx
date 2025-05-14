@@ -13,11 +13,11 @@ export const Contact = () => {
                 <div className={styles.footerSection}>
                     <h3 className={styles.secTitle}>Ventures</h3>
                     <ul>
-                        <li>Bionics Project</li>
-                        <li>ENG-GAGE</li>
-                        <li>Firefly</li>
-                        <li>Project R3D</li>
-                        <li>SUSTAIN-EE</li>
+                        <li><Link to="/project/bionics" className={styles.link}>Bionics Project</Link></li>
+                        <li><Link to="/project/enggage" className={styles.link}>ENG-GAGE</Link></li>
+                        <li><Link to="/project/firefly" className={styles.link}>Firefly</Link></li>
+                        <li><Link to="/project/projectr3d" className={styles.link}>Project R3D</Link></li>
+                        <li><Link to="/project/sustainee" className={styles.link}>SUSTAIN-EE</Link></li>
                     </ul>
                 </div>
 

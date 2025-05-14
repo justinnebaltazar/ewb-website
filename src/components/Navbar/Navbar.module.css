@@ -158,6 +158,10 @@ span {
     overflow-wrap: break-word;
 }
 
+.navHeader:hover {
+    color: #a7192f;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 900px) {
     .logo {

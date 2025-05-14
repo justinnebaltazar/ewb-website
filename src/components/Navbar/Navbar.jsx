@@ -100,7 +100,7 @@ export const Navbar = () => {
                                     </ul>
                                 </div>
                                 <div className={styles.dropdownRight}>
-                                    <h4>Join a Project</h4>
+                                    <h4><Link to="/get-involved" className={styles.navHeader}>Join a Project</Link></h4>
                                     <p>Contribute your skills to make a difference with our active ventures.</p>
                                 </div>
                             </div>
